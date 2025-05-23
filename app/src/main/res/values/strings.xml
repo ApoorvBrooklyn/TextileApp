@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP</string>
+    <string name="reed">Reed:</string>
+    <string name="pick">Pick:</string>
+    <string name="calculate">Calculate</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="the_results_are">The Results Are:</string>
+</resources>
