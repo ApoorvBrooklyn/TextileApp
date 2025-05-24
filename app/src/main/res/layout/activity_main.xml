@@ -7,10 +7,14 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:padding="16dp">
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
 
-    <!-- Repeatable Row Format -->
+    <!-- Reed Row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,21 +22,21 @@
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/reed"
             android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
             android:layout_marginEnd="8dp"/>
-
         <EditText
             android:id="@+id/Reed"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
-    <!-- Copy the above block for each field -->
+    <!-- Pick Row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,91 +44,229 @@
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/pick"
             android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
             android:layout_marginEnd="8dp"/>
-
         <EditText
             android:id="@+id/Pick"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
-    <!-- Repeat for the rest of your fields -->
     <!-- Warp -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warp:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/Warp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Warp:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/Warp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Weft -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weft:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/Weft" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Weft:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/Weft"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Warp RS -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warp RS:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/WarpRS" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Warp RS:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/WarpRS"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Weft RS -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weft RS:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/WeftRS" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Weft RS:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/WeftRS"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- L to L -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L to L:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/LtoL" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="L to L:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/LtoL"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Warp Rate -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warp Rate:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/WarpRate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Warp Rate:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/WarpRate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Weft Rate -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weft Rate:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/WeftRate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Weft Rate:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/WeftRate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Job Rate -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Job Rate:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/JobRate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Job Rate:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/JobRate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Sizing Rate -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sizing Rate:" android:layout_marginEnd="8dp"/>
-        <EditText android:id="@+id/SizingRate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Sizing Rate:"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="8dp"/>
+        <EditText
+            android:id="@+id/SizingRate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Button -->
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calculate" />
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/Clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_marginEnd="16dp" />
 
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
